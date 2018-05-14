@@ -8,11 +8,12 @@ cargandoProd:boolean=true;
     this.cargar_productos();
   }
   public cargar_productos(){
-    
+    this.cargandoProd = true;
       this.http.get('https://elprimero-92dee.firebaseio.com/productos_idx.json')
       .subscribe(res=>{
         console.log(res.json());
-        this.cargandoProd=false;
+        this.cargandoProd = false;
+        this.productos=res.json();
       })
   }
 }
