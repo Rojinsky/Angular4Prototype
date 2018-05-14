@@ -7,6 +7,13 @@ cargandoProd:boolean=true;
   constructor(private http:Http) { 
     this.cargar_productos();
   }
+
+  /**
+   * cargar_product
+   */
+  public cargar_product(cod : string) {
+    return this.http.get(`https://elprimero-92dee.firebaseio.com/productos/${cod}.json`);
+  }
   public cargar_productos(){
     this.cargandoProd = true;
       this.http.get('https://elprimero-92dee.firebaseio.com/productos_idx.json')

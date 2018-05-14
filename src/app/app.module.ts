@@ -18,6 +18,7 @@ import { MainComponent } from './components/main/main.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductComponent } from './components/product/product.component';
+import { BuscarComponent } from './components/buscar/buscar.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ProductComponent } from './components/product/product.component';
     MainComponent,
     AboutComponent,
     ContactComponent,
-    ProductComponent
+    ProductComponent,
+    BuscarComponent
     
   ],
   imports: [
