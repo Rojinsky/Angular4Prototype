@@ -25,7 +25,7 @@ equipo:any[]=[];
   public carga_sobre_nosotros(){
     this.http.get("https://elprimero-92dee.firebaseio.com/equipo.json")
       .subscribe(data => {
-        console.log(data.json());
+        //console.log(data.json());
         this.cargadaSobre = true;
         this.equipo = data.json();
       }) 

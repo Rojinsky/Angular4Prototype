@@ -9,6 +9,12 @@
   animation-fill-mode: both;
 }
 
+svg path,
+svg rect {
+  fill: black;
+}
+
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
